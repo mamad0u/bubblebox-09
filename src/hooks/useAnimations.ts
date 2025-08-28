@@ -53,12 +53,12 @@ export function useAnimations() {
 
     // Smooth scroll pour les ancres
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', (e) => {
+      const anchorElement = anchor as HTMLAnchorElement;
+      anchorElement.addEventListener('click', (e) => {
         e.preventDefault();
-        const href = anchor.getAttribute('href');
+        const href = anchorElement.getAttribute('href');
         if (href) {
           const target = document.querySelector(href);
-          
           if (target) {
             target.scrollIntoView({
               behavior: 'smooth',
@@ -71,14 +71,13 @@ export function useAnimations() {
 
     // Animation des boutons au hover
     document.querySelectorAll('.btn').forEach(btn => {
-      btn.addEventListener('mouseenter', () => {
-        const button = btn as HTMLElement;
+      const button = btn as HTMLElement;
+      button.addEventListener('mouseenter', () => {
         button.style.transform = 'translateY(-3px)';
         button.style.transition = 'transform 0.3s ease';
       });
       
-      btn.addEventListener('mouseleave', () => {
-        const button = btn as HTMLElement;
+      button.addEventListener('mouseleave', () => {
         button.style.transform = 'translateY(0)';
       });
     });
@@ -98,15 +97,14 @@ export function useAnimations() {
 
     // Animation des cartes d'impact au hover
     document.querySelectorAll('.impact-card').forEach(card => {
-      card.addEventListener('mouseenter', () => {
-        const cardElement = card as HTMLElement;
+      const cardElement = card as HTMLElement;
+      cardElement.addEventListener('mouseenter', () => {
         cardElement.style.transform = 'translateY(-8px)';
         cardElement.style.boxShadow = '0 12px 40px rgba(14, 26, 43, 0.15)';
         cardElement.style.transition = 'all 0.3s ease';
       });
       
-      card.addEventListener('mouseleave', () => {
-        const cardElement = card as HTMLElement;
+      cardElement.addEventListener('mouseleave', () => {
         cardElement.style.transform = 'translateY(0)';
         cardElement.style.boxShadow = '0 4px 20px rgba(14, 26, 43, 0.08)';
       });
@@ -114,30 +112,28 @@ export function useAnimations() {
 
     // Animation des blocs colorés
     document.querySelectorAll('.block').forEach(block => {
-      block.addEventListener('mouseenter', () => {
-        if (block.classList.contains('block--image')) return;
-        const blockElement = block as HTMLElement;
+      const blockElement = block as HTMLElement;
+      blockElement.addEventListener('mouseenter', () => {
+        if (blockElement.classList.contains('block--image')) return;
         blockElement.style.transform = 'scale(1.02)';
         blockElement.style.transition = 'transform 0.3s ease';
       });
       
-      block.addEventListener('mouseleave', () => {
-        if (block.classList.contains('block--image')) return;
-        const blockElement = block as HTMLElement;
+      blockElement.addEventListener('mouseleave', () => {
+        if (blockElement.classList.contains('block--image')) return;
         blockElement.style.transform = 'scale(1)';
       });
     });
 
     // Animation des icônes de fonctionnalités
     document.querySelectorAll('.feature-icon').forEach(icon => {
-      icon.addEventListener('mouseenter', () => {
-        const iconElement = icon as HTMLElement;
+      const iconElement = icon as HTMLElement;
+      iconElement.addEventListener('mouseenter', () => {
         iconElement.style.transform = 'scale(1.2) rotate(5deg)';
         iconElement.style.transition = 'transform 0.3s ease';
       });
       
-      icon.addEventListener('mouseleave', () => {
-        const iconElement = icon as HTMLElement;
+      iconElement.addEventListener('mouseleave', () => {
         iconElement.style.transform = 'scale(1) rotate(0deg)';
       });
     });
@@ -159,52 +155,49 @@ export function useAnimations() {
 
     // Animation des cartes de partenaires
     document.querySelectorAll('.partner-logo').forEach(logo => {
-      logo.addEventListener('mouseenter', () => {
-        const logoElement = logo as HTMLElement;
+      const logoElement = logo as HTMLElement;
+      logoElement.addEventListener('mouseenter', () => {
         logoElement.style.transform = 'translateY(-8px) scale(1.05)';
         logoElement.style.transition = 'all 0.3s ease';
       });
       
-      logo.addEventListener('mouseleave', () => {
-        const logoElement = logo as HTMLElement;
+      logoElement.addEventListener('mouseleave', () => {
         logoElement.style.transform = 'translateY(0) scale(1)';
       });
     });
 
     // Gestion des erreurs d'images
     document.querySelectorAll('img').forEach(img => {
-      img.addEventListener('error', () => {
-        const imgElement = img as HTMLImageElement;
-        imgElement.src = 'https://placehold.co/400x300?text=Image+non+disponible';
-        imgElement.alt = 'Image non disponible';
+      const image = img as HTMLImageElement;
+      image.addEventListener('error', () => {
+        image.src = 'https://placehold.co/400x300?text=Image+non+disponible';
+        image.alt = 'Image non disponible';
       });
     });
 
     // Animation des liens de navigation
     document.querySelectorAll('.nav-links a').forEach(link => {
-      link.addEventListener('mouseenter', () => {
-        const linkElement = link as HTMLElement;
+      const linkElement = link as HTMLElement;
+      linkElement.addEventListener('mouseenter', () => {
         linkElement.style.transform = 'translateY(-2px)';
         linkElement.style.transition = 'transform 0.2s ease';
       });
       
-      link.addEventListener('mouseleave', () => {
-        const linkElement = link as HTMLElement;
+      linkElement.addEventListener('mouseleave', () => {
         linkElement.style.transform = 'translateY(0)';
       });
     });
 
     // Effet de focus amélioré pour l'accessibilité
     document.querySelectorAll('a, button, input').forEach(element => {
-      element.addEventListener('focus', () => {
-        const focusElement = element as HTMLElement;
-        focusElement.style.outline = '2px solid var(--primary)';
-        focusElement.style.outlineOffset = '2px';
+      const el = element as HTMLElement;
+      el.addEventListener('focus', () => {
+        el.style.outline = '2px solid var(--primary)';
+        el.style.outlineOffset = '2px';
       });
       
-      element.addEventListener('blur', () => {
-        const blurElement = element as HTMLElement;
-        blurElement.style.outline = 'none';
+      el.addEventListener('blur', () => {
+        el.style.outline = 'none';
       });
     });
 

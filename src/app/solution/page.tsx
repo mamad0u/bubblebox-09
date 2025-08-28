@@ -1,162 +1,143 @@
 'use client';
 
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import { useAnimations } from '@/hooks/useAnimations';
+import Link from 'next/link';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import { useAnimations } from '../../hooks/useAnimations';
 
-export default function SolutionPage() {
+export default function Solution() {
   useAnimations();
 
   return (
-    <div className="solution-page">
+    <>
       <Header />
       
       <main>
-        <section className="hero-solution">
+        {/* Hero Section avec gradient unique */}
+        <section className="solution-hero">
           <div className="container">
-            <h1>La solution</h1>
-            <p className="lead">
-              BubbleBox est un module de douches mobile pour apporter l&apos;hygiène à celles et ceux qui en ont le plus besoin
-            </p>
+            <div className="solution-hero-content">
+              <h1>La Solution</h1>
+              <p className="hero-subtitle">
+                BubbleBox est un module de douches mobile pour apporter l&apos;hygiène à celles et ceux qui en ont le plus besoin.
+              </p>
+   
+            </div>
           </div>
         </section>
 
-        <section className="solution-features">
+        {/* Grille de caractéristiques en mosaïque */}
+        <section className="solution-features-mosaic">
           <div className="container">
-            <div className="features-grid">
-              <div className="feature-item">
-                <div className="feature-icon">🚿</div>
+            <h2>Caractéristiques techniques</h2>
+            <div className="mosaic-grid">
+              <div className="mosaic-item mosaic-item--large">
+                <div className="mosaic-icon">🚿</div>
                 <h3>Jusqu&apos;à 100 douches par jour</h3>
                 <p>Capacité d&apos;accueil élevée pour répondre aux besoins des populations</p>
               </div>
-              
-              <div className="feature-item">
-                <div className="feature-icon">📦</div>
+              <div className="mosaic-item mosaic-item--small">
+                <div className="mosaic-icon">📦</div>
                 <h3>Conteneur mobile 20 pieds</h3>
-                <p>Transport facile et déploiement rapide sur tous types de terrains</p>
+                <p>Transport facile et déploiement rapide</p>
               </div>
-              
-              <div className="feature-item">
-                <div className="feature-icon">🤝</div>
+              <div className="mosaic-item mosaic-item--small">
+                <div className="mosaic-icon">🤝</div>
                 <h3>Opéré en commun</h3>
-                <p>Collaboration avec les associations et collectivités locales</p>
+                <p>Collaboration avec associations locales</p>
               </div>
-              
-              <div className="feature-item">
-                <div className="feature-icon">⚡</div>
-                <h3>Jusqu&apos;à 50 heures d&apos;autonomie</h3>
-                <p>Fonctionnement indépendant grâce aux panneaux solaires et batteries</p>
+              <div className="mosaic-item mosaic-item--small">
+                <div className="mosaic-icon">⏰</div>
+                <h3>50h d&apos;autonomie</h3>
+                <p>Fonctionnement indépendant</p>
+              </div>
+              <div className="mosaic-item mosaic-item--small">
+                <div className="mosaic-icon">💧</div>
+                <h3>Système de réutilisation d&apos;eau</h3>
+                <p>Technologie éco-responsable pour optimiser les ressources</p>
               </div>
             </div>
           </div>
         </section>
 
-        <section className="solution-features-mosaic">
+        {/* Section avec timeline verticale */}
+        <section className="solution-timeline">
           <div className="container">
-            <div className="mosaic-layout">
-              <div className="mosaic-item mosaic-item--large">
-                <h2>Module d&apos;hygiène mobile</h2>
-                <p>
-                  Notre module BubbleBox est conçu comme une solution complète et autonome 
-                  pour apporter l&apos;accès à l&apos;hygiène dans les zones où les 
-                  infrastructures sont insuffisantes ou inexistantes.
-                </p>
-                <p>
-                  Équipé de 3 cabines de douches individuelles, d&apos;un espace technique 
-                  avec chauffe-eau et système de filtration, et d&apos;espaces de stockage 
-                  pour les produits d&apos;hygiène et serviettes.
-                </p>
+            <h2>Notre approche en 4 étapes</h2>
+            <div className="timeline">
+              <div className="timeline-item">
+                <div className="timeline-marker">1</div>
+                <div className="timeline-content">
+                  <h3>Mettre l&apos;hygiène en commun</h3>
+                  <p>
+                    Afin de garantir un accueil inclusif, chaleureux et rassurant aux personnes vulnérables, 
+                    nous mettons nos forces au service du collectif. Les modules BubbleBox sont des &quot;communs humanitaires&quot; 
+                    développés, déployés et opérés avec les associations, les collectivités et les communautés locales.
+                  </p>
+                  <Link href="/about" className="btn btn--primary">En savoir plus</Link>
+                </div>
               </div>
-              
-              <div className="mosaic-item mosaic-item--small">
-                <h3>Adaptabilité</h3>
-                <p>S&apos;adapte à différents contextes et lieux de déploiement</p>
+
+              <div className="timeline-item">
+                <div className="timeline-marker">2</div>
+                <div className="timeline-content">
+                  <h3>Minimiser notre empreinte, maximiser l&apos;impact</h3>
+                  <p>
+                    Pour diminuer notre empreinte environnementale et amplifier notre impact social, nos modules 
+                    sont fabriqués avec un maximum de matériaux de seconde main et nous favorisons le recours 
+                    aux entreprises d&apos;insertion.
+                  </p>
+                  <Link href="/durabilite" className="btn btn--primary">En savoir plus</Link>
+                </div>
               </div>
-              
-              <div className="mosaic-item mosaic-item--small">
-                <h3>Résilience</h3>
-                <p>Conçu pour fonctionner en situation d&apos;urgence</p>
+
+              <div className="timeline-item">
+                <div className="timeline-marker">3</div>
+                <div className="timeline-content">
+                  <h3>S&apos;adapter aux besoins</h3>
+                  <p>
+                    Plutôt que d&apos;attendre que nos publics-cibles viennent à nous, nos modules permettent d&apos;aller 
+                    vers les populations privées d&apos;accès décent à l&apos;hygiène. BubbleBox est conçu pour s&apos;adapter 
+                    à différents contextes et situations d&apos;urgence.
+                  </p>
+                  <Link href="/#impact" className="btn btn--primary">En savoir plus</Link>
+                </div>
               </div>
-              
-              <div className="mosaic-item mosaic-item--small">
-                <h3>Durabilité</h3>
-                <p>Matériaux de seconde main et entreprises d&apos;insertion</p>
-              </div>
-              
-              <div className="mosaic-item mosaic-item--small">
-                <h3>Autonomie</h3>
-                <p>Jusqu&apos;à 3 jours d&apos;autonomie complète</p>
+
+              <div className="timeline-item">
+                <div className="timeline-marker">4</div>
+                <div className="timeline-content">
+                  <h3>Ramener nos bénéficiaires au centre</h3>
+                  <p>
+                    BubbleBox a pour but d&apos;associer ses partenaires locaux et bénéficiaires à la gouvernance 
+                    du projet. Nous suivons une démarche d&apos;amélioration continue en collectant les retours.
+                  </p>
+                  <Link href="/design-utilisateur" className="btn btn--primary">En savoir plus</Link>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section className="solution-context">
+        {/* Section CTA avec design unique */}
+        <section className="solution-cta-unique">
           <div className="container">
-            <h2>Contexte d&apos;utilisation</h2>
-            <div className="context-content">
-              <p>
-                Le manque d&apos;accès à l&apos;hygiène touche des populations dans des 
-                contextes variés : personnes sans-abris et mal-logées dans les villes, 
-                campements informels en périphéries, camps de personnes exilées dans les 
-                espaces ruraux...
-              </p>
-              <p>
-                BubbleBox est inspiré par les infrastructures d&apos;hygiène publiques du 
-                monde entier qui assurent ou ont assuré un accès minimal pour toutes et tous. 
-                Nos modules sont conçus comme des &quot;mini-bains publics sur roues&quot; 
-                pour apporter l&apos;hygiène partout, surtout lorsque les solutions 
-                individuelles et temporaires sont sous-dimensionnées.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section className="solution-impact">
-          <div className="container">
-            <h2>Impact et bénéficiaires</h2>
-            <div className="impact-content">
-              <p>
-                L&apos;accès à l&apos;hygiène est un droit humain fondamental qui ignore 
-                les frontières et les origines. Nos publics-cibles sont principalement les 
-                êtres humains dépourvus d&apos;accès à l&apos;hygiène, en premier lieu 
-                les personnes sans-abris, mal-logées, migrantes ou réfugiées.
-              </p>
-              <p>
-                Nous nous efforçons de rendre nos modules accueillant pour toutes et tous. 
-                Nous sommes à l&apos;écoute de nos bénéficiaires dans leur diversité afin 
-                de nous adapter à leurs besoins et d&apos;améliorer nos modules.
-              </p>
-              <p>
-                Nous concevons BubbleBox en tant que &quot;commun solidaire&quot; où les 
-                personnes marginalisées peuvent bénéficier d&apos;un moment d&apos;intimité 
-                pour prendre soin d&apos;elles-mêmes avant d&apos;interagir avec des 
-                bénévoles de plusieurs associations et de créer du lien avec une communauté locale.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section className="solution-principles">
-          <div className="container">
-            <h2>Nos principes d&apos;opération</h2>
-            <div className="principles-content">
-              <p>
-                Afin d&apos;entretenir une relation de confiance, BubbleBox et ses partenaires 
-                s&apos;engagent à communiquer avec nos bénéficiaires selon des principes 
-                d&apos;empathie, de respect et d&apos;inclusivité.
-              </p>
-              <p>
-                Enfin, nous poursuivons également une mission d&apos;information sur les 
-                inégalités d&apos;accès à l&apos;hygiène et défendons publiquement le droit 
-                d&apos;accès à l&apos;hygiène pour toutes et tous.
-              </p>
+            <div className="cta-content">
+              <div className="cta-text">
+                <h2>Prêt à soutenir notre solution ?</h2>
+                <p>Rejoignez-nous dans notre mission d&apos;apporter l&apos;hygiène à tous</p>
+              </div>
+         
+              <div className="cta-actions">
+                <Link href="/#don" className="btn btn--primary">FAIRE UN DON</Link>
+                <Link href="/#contact" className="btn btn--ghost">NOUS CONTACTER</Link>
+              </div>
             </div>
           </div>
         </section>
       </main>
 
       <Footer />
-    </div>
+    </>
   );
 }
