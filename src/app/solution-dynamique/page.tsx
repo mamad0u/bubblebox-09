@@ -1,237 +1,202 @@
 'use client';
 
 import Link from 'next/link';
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
-import { useAnimations } from '../../hooks/useAnimations';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import { useAnimations } from '@/hooks/useAnimations';
 
-export default function SolutionDynamique() {
+export default function SolutionDynamiquePage() {
   useAnimations();
 
   return (
-    <>
+    <div className="solution-dynamique-page">
       <Header />
       
       <main>
-        {/* Hero Section avec design dynamique */}
-        <section className="solution-dynamique-hero">
+        <section className="hero-solution-dynamique">
           <div className="container">
-            <div className="solution-dynamique-hero-content">
-              <h1>Solution Dynamique</h1>
-              <p className="hero-subtitle">
-                S'adapter aux besoins plutôt que d'attendre que nos publics-cibles viennent à nous.
-              </p>
-              <div className="hero-adaptability">
-                <div className="adaptability-item">
-                  <span className="adaptability-icon">🚚</span>
-                  <span className="adaptability-label">Mobile</span>
-                </div>
-                <div className="adaptability-item">
-                  <span className="adaptability-icon">🔄</span>
-                  <span className="adaptability-label">Flexible</span>
-                </div>
-                <div className="adaptability-item">
-                  <span className="adaptability-icon">⚡</span>
-                  <span className="adaptability-label">Rapide</span>
-                </div>
-                <div className="adaptability-item">
-                  <span className="adaptability-icon">🌍</span>
-                  <span className="adaptability-label">Universel</span>
-                </div>
-              </div>
-            </div>
+            <h1>Solution Dynamique</h1>
+            <p className="lead">
+              S&apos;adapter aux besoins et aux contextes pour maximiser notre impact
+            </p>
           </div>
         </section>
 
-        {/* Section approche avec design en vagues */}
-        <section className="solution-dynamique-approach">
+        <section className="solution-adaptability">
           <div className="container">
-            <div className="approach-content">
-              <h2>Notre approche : aller vers les populations</h2>
+            <h2>Adaptabilité et flexibilité</h2>
+            <div className="adaptability-content">
               <p>
-                Plutôt que d'attendre que nos publics-cibles viennent à nous, nos modules permettent d'aller 
-                vers les populations privées d'accès décent à l'hygiène. BubbleBox est conçu pour s'adapter 
-                à différents contextes et lieux de déploiements, pour répondre aux besoins de plusieurs 
-                catégories de bénéficiaires et même d'être déployé en situation d'urgence, par exemple 
+                Plutôt que d&apos;attendre que nos publics-cibles viennent à nous, 
+                nos modules permettent d&apos;aller vers les populations privées 
+                d&apos;accès décent à l&apos;hygiène. BubbleBox est conçu pour 
+                s&apos;adapter à différents contextes et lieux de déploiements, 
+                pour répondre aux besoins de plusieurs catégories de bénéficiaires 
+                et même d&apos;être déployé en situation d&apos;urgence, par exemple 
                 en réponse à des catastrophes naturelles.
               </p>
+              <p>
+                Notre module est équipé de 3 cabines de douches individuelles et 
+                d&apos;un espace technique avec les chauffe-eau, le système de 
+                filtration et des rangements pour stocker des produits d&apos;hygiène 
+                à distribuer à nos bénéficiaires, une réserve de serviettes et un 
+                lave-linge/sèche-linge pour les garder propres.
+              </p>
             </div>
-            <div className="approach-visual">
-              <div className="wave-container">
-                <div className="wave wave--1">🚚</div>
-                <div className="wave wave--2">💧</div>
-                <div className="wave wave--3">🤝</div>
-                <div className="wave wave--4">🏠</div>
+          </div>
+        </section>
+
+        <section className="solution-contexts">
+          <div className="container">
+            <h2>Contextes d&apos;utilisation variés</h2>
+            <div className="contexts-content">
+              <p>
+                Le manque d&apos;accès à l&apos;hygiène touche des populations dans 
+                des contextes variés : personnes sans-abris et mal-logées dans les 
+                villes, campements informels en périphéries, camps de personnes 
+                exilées dans les espaces ruraux...
+              </p>
+              <p>
+                BubbleBox est inspiré par les infrastructures d&apos;hygiène publiques 
+                du monde entier qui assurent ou ont assuré un accès minimal pour 
+                toutes et tous. Nos modules sont conçus comme des &quot;mini-bains 
+                publics sur roues&quot; pour apporter l&apos;hygiène partout, surtout 
+                lorsque les solutions individuelles et temporaires sont sous-dimensionnées.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section className="solution-innovation">
+          <div className="container">
+            <h2>Innovation continue</h2>
+            <div className="innovation-content">
+              <p>
+                Nous continuons de développer BubbleBox comme une solution efficace 
+                et résiliente pour apporter un accès à l&apos;hygiène aux personnes 
+                vulnérables en situation de crise afin d&apos;aider à protéger leur 
+                santé et leur dignité.
+              </p>
+              <p>
+                Notre approche itérative nous permet d&apos;améliorer constamment 
+                nos modules en fonction des retours d&apos;expérience et des 
+                évolutions technologiques.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section className="solution-features-dynamic">
+          <div className="container">
+            <h2>Caractéristiques dynamiques</h2>
+            <div className="features-grid">
+              <div className="feature-item">
+                <div className="feature-icon">🚚</div>
+                <h3>Mobilité totale</h3>
+                <p>Déploiement rapide sur tous types de terrains</p>
+              </div>
+              
+              <div className="feature-item">
+                <div className="feature-icon">⚡</div>
+                <h3>Autonomie énergétique</h3>
+                <p>Fonctionnement indépendant grâce aux panneaux solaires</p>
+              </div>
+              
+              <div className="feature-item">
+                <div className="feature-icon">💧</div>
+                <h3>Gestion intelligente de l&apos;eau</h3>
+                <p>Systèmes de filtration et réutilisation</p>
+              </div>
+              
+              <div className="feature-item">
+                <div className="feature-icon">🔧</div>
+                <h3>Maintenance simplifiée</h3>
+                <p>Conception modulaire pour faciliter les réparations</p>
+              </div>
+              
+              <div className="feature-item">
+                <div className="feature-icon">🌍</div>
+                <h3>Adaptation climatique</h3>
+                <p>Fonctionnement dans des conditions extrêmes</p>
+              </div>
+              
+              <div className="feature-item">
+                <div className="feature-icon">📱</div>
+                <h3>Monitoring à distance</h3>
+                <p>Suivi en temps réel des performances</p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Section équipements avec design en grille dynamique */}
-        <section className="solution-dynamique-equipment">
+        <section className="solution-deployment">
           <div className="container">
-            <h2>Équipements du module</h2>
-            <div className="equipment-grid">
-              <div className="equipment-main">
-                <div className="equipment-icon">🚿</div>
-                <h3>3 cabines de douches individuelles</h3>
-                <p>Espace privé et confortable pour chaque bénéficiaire</p>
+            <h2>Processus de déploiement</h2>
+            <div className="deployment-content">
+              <div className="deployment-step">
+                <h3>1. Évaluation du contexte</h3>
+                <p>
+                  Analyse des besoins locaux, des contraintes logistiques et des 
+                  partenariats possibles pour optimiser l&apos;impact.
+                </p>
               </div>
-              <div className="equipment-item">
-                <div className="equipment-icon">🔥</div>
-                <h4>Chauffe-eau</h4>
-                <p>Eau chaude disponible en permanence</p>
+              
+              <div className="deployment-step">
+                <h3>2. Adaptation du module</h3>
+                <p>
+                  Configuration spécifique selon le contexte : équipements, 
+                  capacités, et fonctionnalités adaptées aux besoins identifiés.
+                </p>
               </div>
-              <div className="equipment-item">
-                <div className="equipment-icon">💧</div>
-                <h4>Système de filtration</h4>
-                <p>Réutilisation et purification de l'eau</p>
+              
+              <div className="deployment-step">
+                <h3>3. Formation des équipes</h3>
+                <p>
+                  Formation des opérateurs locaux et des bénévoles pour assurer 
+                  une gestion autonome et durable du module.
+                </p>
               </div>
-              <div className="equipment-item">
-                <div className="equipment-icon">🧴</div>
-                <h4>Produits d'hygiène</h4>
-                <p>Stockage et distribution organisés</p>
-              </div>
-              <div className="equipment-item">
-                <div className="equipment-icon">🛁</div>
-                <h4>Serviettes</h4>
-                <p>Réserve de serviettes propres</p>
-              </div>
-              <div className="equipment-item">
-                <div className="equipment-icon">👕</div>
-                <h4>Lave-linge/Sèche-linge</h4>
-                <p>Entretien des serviettes et vêtements</p>
+              
+              <div className="deployment-step">
+                <h3>4. Suivi et amélioration</h3>
+                <p>
+                  Collecte des retours d&apos;expérience et ajustements continus 
+                  pour optimiser l&apos;efficacité et l&apos;impact.
+                </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Section contextes avec design en carte interactive */}
-        <section className="solution-dynamique-contexts">
+        <section className="solution-future">
           <div className="container">
-            <h2>Contextes d'intervention variés</h2>
-            <div className="contexts-map">
-              <div className="context-card context--urban">
-                <div className="context-header">
-                  <div className="context-icon">🏙️</div>
-                  <h3>Milieu urbain</h3>
-                </div>
-                <div className="context-content">
-                  <p>Personnes sans-abris et mal-logées dans les villes</p>
-                  <div className="context-features">
-                    <span>• Campements informels</span>
-                    <span>• Zones périphériques</span>
-                    <span>• Centres-villes</span>
-                  </div>
-                </div>
-              </div>
-              <div className="context-card context--rural">
-                <div className="context-header">
-                  <div className="context-icon">🌾</div>
-                  <h3>Espace rural</h3>
-                </div>
-                <div className="context-content">
-                  <p>Camps de personnes exilées dans les espaces ruraux</p>
-                  <div className="context-features">
-                    <span>• Zones isolées</span>
-                    <span>• Territoires ruraux</span>
-                    <span>• Accès limité</span>
-                  </div>
-                </div>
-              </div>
-              <div className="context-card context--emergency">
-                <div className="context-header">
-                  <div className="context-icon">🚨</div>
-                  <h3>Situations d'urgence</h3>
-                </div>
-                <div className="context-content">
-                  <p>Catastrophes naturelles et crises humanitaires</p>
-                  <div className="context-features">
-                    <span>• Déploiement rapide</span>
-                    <span>• Adaptation immédiate</span>
-                    <span>• Réponse d'urgence</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Section inspiration avec design en timeline horizontale */}
-        <section className="solution-dynamique-inspiration">
-          <div className="container">
-            <h2>Inspirations internationales</h2>
-            <div className="inspiration-timeline">
-              <div className="timeline-point">
-                <div className="point-marker">🌍</div>
-                <h3>Infrastructures publiques</h3>
-                <p>Bains publics du monde entier qui assurent un accès minimal pour toutes et tous</p>
-              </div>
-              <div className="timeline-connector">→</div>
-              <div className="timeline-point">
-                <div className="point-marker">🚚</div>
-                <h3>Mini-bains publics sur roues</h3>
-                <p>BubbleBox conçu pour apporter l'hygiène partout</p>
-              </div>
-              <div className="timeline-connector">→</div>
-              <div className="timeline-point">
-                <div className="point-marker">💡</div>
-                <h3>Solution résiliente</h3>
-                <p>Efficace et adaptable aux situations de crise</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Section développement avec design en escalier dynamique */}
-        <section className="solution-dynamique-development">
-          <div className="container">
-            <h2>Développement continu</h2>
-            <div className="development-steps">
-              <div className="development-step step--current">
-                <div className="step-indicator">
-                  <span className="step-number">Maintenant</span>
-                  <div className="step-progress"></div>
-                </div>
-                <div className="step-content">
-                  <h3>Solution efficace et résiliente</h3>
-                  <p>
-                    Nous continuons de développer BubbleBox comme une solution efficace et résiliente 
-                    pour apporter un accès à l'hygiène aux personnes vulnérables en situation de crise 
-                    afin d'aider à protéger leur santé et leur dignité.
-                  </p>
-                </div>
-              </div>
-              <div className="development-step step--future">
-                <div className="step-indicator">
-                  <span className="step-number">Avenir</span>
-                  <div className="step-progress step-progress--future"></div>
-                </div>
-                <div className="step-content">
-                  <h3>Évolution et amélioration</h3>
-                  <p>Adaptation continue aux nouveaux besoins et contextes</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* CTA Section avec design unique */}
-        <section className="solution-dynamique-cta">
-          <div className="container">
-            <div className="cta-content">
-              <h2>Prêt à déployer notre solution dynamique ?</h2>
-              <p>BubbleBox s'adapte à vos besoins et contextes spécifiques</p>
-              <div className="cta-actions">
-                <Link href="/#contact" className="btn btn--primary">NOUS CONTACTER</Link>
-                <Link href="/solution" className="btn btn--ghost">DÉCOUVRIR LA SOLUTION</Link>
-              </div>
+            <h2>Perspectives d&apos;avenir</h2>
+            <div className="future-content">
+              <p>
+                Notre vision est de développer une gamme complète de solutions 
+                d&apos;hygiène mobiles adaptées à différents contextes et besoins. 
+                Nous travaillons sur :
+              </p>
+              
+              <ul>
+                <li>Modules spécialisés pour les situations d&apos;urgence</li>
+                <li>Solutions adaptées aux climats extrêmes</li>
+                <li>Technologies de purification d&apos;eau avancées</li>
+                <li>Intégration de l&apos;intelligence artificielle pour l&apos;optimisation</li>
+                <li>Développement de partenariats internationaux</li>
+              </ul>
+              
+              <p>
+                Cette approche dynamique nous permet de rester à la pointe de 
+                l&apos;innovation tout en répondant aux besoins réels des 
+                communautés que nous servons.
+              </p>
             </div>
           </div>
         </section>
       </main>
 
       <Footer />
-    </>
+    </div>
   );
 }

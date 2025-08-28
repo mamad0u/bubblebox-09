@@ -13,23 +13,25 @@ export function useAnimations() {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          entry.target.style.opacity = '1';
-          entry.target.style.transform = 'translateY(0)';
+          const target = entry.target as HTMLElement;
+          target.style.opacity = '1';
+          target.style.transform = 'translateY(0)';
         }
       });
     }, observerOptions);
 
     // Observer les éléments à animer
     document.querySelectorAll('.block, .solution-block, .impact-card, .partner-logo, .durabilite-feature').forEach(el => {
-      el.style.opacity = '0';
-      el.style.transform = 'translateY(30px)';
-      el.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+      const element = el as HTMLElement;
+      element.style.opacity = '0';
+      element.style.transform = 'translateY(30px)';
+      element.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
       observer.observe(el);
     });
 
     // Header sticky avec effet de transparence
     let lastScroll = 0;
-    const header = document.querySelector('.nav');
+    const header = document.querySelector('.nav') as HTMLElement | null;
 
     const handleScroll = () => {
       const currentScroll = window.pageYOffset;
@@ -51,35 +53,40 @@ export function useAnimations() {
 
     // Smooth scroll pour les ancres
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
+      anchor.addEventListener('click', (e) => {
         e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href') || '');
-        
-        if (target) {
-          target.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-          });
+        const href = anchor.getAttribute('href');
+        if (href) {
+          const target = document.querySelector(href);
+          
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
         }
       });
     });
 
     // Animation des boutons au hover
     document.querySelectorAll('.btn').forEach(btn => {
-      btn.addEventListener('mouseenter', function() {
-        this.style.transform = 'translateY(-3px)';
-        this.style.transition = 'transform 0.3s ease';
+      btn.addEventListener('mouseenter', () => {
+        const button = btn as HTMLElement;
+        button.style.transform = 'translateY(-3px)';
+        button.style.transition = 'transform 0.3s ease';
       });
       
-      btn.addEventListener('mouseleave', function() {
-        this.style.transform = 'translateY(0)';
+      btn.addEventListener('mouseleave', () => {
+        const button = btn as HTMLElement;
+        button.style.transform = 'translateY(0)';
       });
     });
 
     // Effet de parallaxe léger sur le hero
     const handleParallax = () => {
       const scrolled = window.pageYOffset;
-      const hero = document.querySelector('.hero-bg img');
+      const hero = document.querySelector('.hero-bg img') as HTMLImageElement | null;
       
       if (hero) {
         const rate = scrolled * -0.3;
@@ -91,48 +98,54 @@ export function useAnimations() {
 
     // Animation des cartes d'impact au hover
     document.querySelectorAll('.impact-card').forEach(card => {
-      card.addEventListener('mouseenter', function() {
-        this.style.transform = 'translateY(-8px)';
-        this.style.boxShadow = '0 12px 40px rgba(14, 26, 43, 0.15)';
-        this.style.transition = 'all 0.3s ease';
+      card.addEventListener('mouseenter', () => {
+        const cardElement = card as HTMLElement;
+        cardElement.style.transform = 'translateY(-8px)';
+        cardElement.style.boxShadow = '0 12px 40px rgba(14, 26, 43, 0.15)';
+        cardElement.style.transition = 'all 0.3s ease';
       });
       
-      card.addEventListener('mouseleave', function() {
-        this.style.transform = 'translateY(0)';
-        this.style.boxShadow = '0 4px 20px rgba(14, 26, 43, 0.08)';
+      card.addEventListener('mouseleave', () => {
+        const cardElement = card as HTMLElement;
+        cardElement.style.transform = 'translateY(0)';
+        cardElement.style.boxShadow = '0 4px 20px rgba(14, 26, 43, 0.08)';
       });
     });
 
     // Animation des blocs colorés
     document.querySelectorAll('.block').forEach(block => {
-      block.addEventListener('mouseenter', function() {
-        if (this.classList.contains('block--image')) return;
-        this.style.transform = 'scale(1.02)';
-        this.style.transition = 'transform 0.3s ease';
+      block.addEventListener('mouseenter', () => {
+        if (block.classList.contains('block--image')) return;
+        const blockElement = block as HTMLElement;
+        blockElement.style.transform = 'scale(1.02)';
+        blockElement.style.transition = 'transform 0.3s ease';
       });
       
-      block.addEventListener('mouseleave', function() {
-        if (this.classList.contains('block--image')) return;
-        this.style.transform = 'scale(1)';
+      block.addEventListener('mouseleave', () => {
+        if (block.classList.contains('block--image')) return;
+        const blockElement = block as HTMLElement;
+        blockElement.style.transform = 'scale(1)';
       });
     });
 
     // Animation des icônes de fonctionnalités
     document.querySelectorAll('.feature-icon').forEach(icon => {
-      icon.addEventListener('mouseenter', function() {
-        this.style.transform = 'scale(1.2) rotate(5deg)';
-        this.style.transition = 'transform 0.3s ease';
+      icon.addEventListener('mouseenter', () => {
+        const iconElement = icon as HTMLElement;
+        iconElement.style.transform = 'scale(1.2) rotate(5deg)';
+        iconElement.style.transition = 'transform 0.3s ease';
       });
       
-      icon.addEventListener('mouseleave', function() {
-        this.style.transform = 'scale(1) rotate(0deg)';
+      icon.addEventListener('mouseleave', () => {
+        const iconElement = icon as HTMLElement;
+        iconElement.style.transform = 'scale(1) rotate(0deg)';
       });
     });
 
     // Animation du logo au scroll
     const handleLogoAnimation = () => {
       const scrolled = window.pageYOffset;
-      const logo = document.querySelector('.brand img');
+      const logo = document.querySelector('.brand img') as HTMLImageElement | null;
       
       if (logo && scrolled > 50) {
         logo.style.transform = 'scale(0.9)';
@@ -146,45 +159,52 @@ export function useAnimations() {
 
     // Animation des cartes de partenaires
     document.querySelectorAll('.partner-logo').forEach(logo => {
-      logo.addEventListener('mouseenter', function() {
-        this.style.transform = 'translateY(-8px) scale(1.05)';
-        this.style.transition = 'all 0.3s ease';
+      logo.addEventListener('mouseenter', () => {
+        const logoElement = logo as HTMLElement;
+        logoElement.style.transform = 'translateY(-8px) scale(1.05)';
+        logoElement.style.transition = 'all 0.3s ease';
       });
       
-      logo.addEventListener('mouseleave', function() {
-        this.style.transform = 'translateY(0) scale(1)';
+      logo.addEventListener('mouseleave', () => {
+        const logoElement = logo as HTMLElement;
+        logoElement.style.transform = 'translateY(0) scale(1)';
       });
     });
 
     // Gestion des erreurs d'images
     document.querySelectorAll('img').forEach(img => {
-      img.addEventListener('error', function() {
-        this.src = 'https://placehold.co/400x300?text=Image+non+disponible';
-        this.alt = 'Image non disponible';
+      img.addEventListener('error', () => {
+        const imgElement = img as HTMLImageElement;
+        imgElement.src = 'https://placehold.co/400x300?text=Image+non+disponible';
+        imgElement.alt = 'Image non disponible';
       });
     });
 
     // Animation des liens de navigation
     document.querySelectorAll('.nav-links a').forEach(link => {
-      link.addEventListener('mouseenter', function() {
-        this.style.transform = 'translateY(-2px)';
-        this.style.transition = 'transform 0.2s ease';
+      link.addEventListener('mouseenter', () => {
+        const linkElement = link as HTMLElement;
+        linkElement.style.transform = 'translateY(-2px)';
+        linkElement.style.transition = 'transform 0.2s ease';
       });
       
-      link.addEventListener('mouseleave', function() {
-        this.style.transform = 'translateY(0)';
+      link.addEventListener('mouseleave', () => {
+        const linkElement = link as HTMLElement;
+        linkElement.style.transform = 'translateY(0)';
       });
     });
 
     // Effet de focus amélioré pour l'accessibilité
     document.querySelectorAll('a, button, input').forEach(element => {
-      element.addEventListener('focus', function() {
-        this.style.outline = '2px solid var(--primary)';
-        this.style.outlineOffset = '2px';
+      element.addEventListener('focus', () => {
+        const focusElement = element as HTMLElement;
+        focusElement.style.outline = '2px solid var(--primary)';
+        focusElement.style.outlineOffset = '2px';
       });
       
-      element.addEventListener('blur', function() {
-        this.style.outline = 'none';
+      element.addEventListener('blur', () => {
+        const blurElement = element as HTMLElement;
+        blurElement.style.outline = 'none';
       });
     });
 
