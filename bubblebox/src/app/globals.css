@@ -1,0 +1,14 @@
+@media (max-width: 720px){
+	.nav-toggle{display:block}
+	.nav-links{position:fixed;top:0;right:-100%;width:100%;height:100vh;background:#fff;
+		display:flex;flex-direction:column;gap:2rem;padding:5rem 2rem 2rem;transform:translateX(0);opacity:1;pointer-events:none;transition:all .3s ease;z-index:1000;overflow:hidden}
+	.nav-links.open{right:0;pointer-events:auto}
+	.menu-close{position:absolute;top:1.5rem;right:2rem;background:none;border:none;font-size:2rem;color:#000;cursor:pointer;padding:0;width:40px;height:40px;display:flex;align-items:center;justify-content:center;display:flex}
+	.nav-links a{font-size:1.2rem;padding:1.5rem 0;width:100%;text-align:left;color:#000;text-decoration:none;font-weight:700;transition:none}
+	.nav-links a:hover{background:none;color:#000;transform:none;box-shadow:none}
+	.nav-links .btn{text-align:center;margin-top:3rem;width:100%;background:none;color:#000;border:2px solid #000;border-radius:0;padding:1.5rem 1.5rem;font-weight:700;box-shadow:none;transition:none}
+	.nav-links .btn:hover{background:none;color:#000;transform:none;box-shadow:none}
+	
+	/* Empêcher le scroll quand le menu est ouvert */
+	body.menu-open{overflow:hidden}
+}
