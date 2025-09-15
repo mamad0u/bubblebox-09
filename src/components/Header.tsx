@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import Logo from './Logo';
+import Image from 'next/image';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,8 +33,13 @@ export default function Header() {
       </div>
       <nav className="nav">
         <Link className="brand" href="/">
-          <Logo size={40} />
-          <span>BUBBLEBOX</span>
+          <Image 
+            src="/BBX.png" 
+            alt="BubbleBox Logo" 
+            width={160} 
+            height={50}
+            className="logo-image responsive-logo"
+          />
         </Link>
         <button 
           id="navToggle" 

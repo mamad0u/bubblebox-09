@@ -721,4 +721,25 @@ a:active, button:active{outline:none}
 /* Cacher la croix de fermeture sur desktop */
 .menu-close{display:none}
 
+/* Logo responsive */
+.responsive-logo {
+  width: 160px;
+  height: 50px;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .responsive-logo {
+    width: 120px;
+    height: 38px;
+  }
+}
+
+@media (max-width: 480px) {
+  .responsive-logo {
+    width: 100px;
+    height: 31px;
+  }
+}
+
 /* Base styles */
