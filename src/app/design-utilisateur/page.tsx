@@ -17,9 +17,9 @@ export default function DesignUtilisateur() {
         <section className="design-hero-unique">
           <div className="container">
             <div className="design-hero-content">
-              <h1>Design centré sur l&apos;utilisateur</h1>
+              <h1>Un module pensé pour ses utilisateurs</h1>
               <p className="hero-subtitle">
-                Ramener nos bénéficiaires au centre de notre démarche pour créer des solutions vraiment adaptées à leurs besoins.
+              Nous ramenons nos bénéficiaires au centre de notre démarche pour créer des solutions vraiment adaptées à leurs besoins.
               </p>
             </div>
           </div>
@@ -38,7 +38,7 @@ export default function DesignUtilisateur() {
                   <p>
                     BubbleBox a pour but d&apos;associer ses partenaires locaux et bénéficiaires à la gouvernance 
                     du projet. Nous suivons une démarche d&apos;amélioration continue en collectant continuellement 
-                    les retours de nos bénéficiaires, en échangeant avec des experts, et en collaborant avec 
+                    les retours de nos bénéficiaires, en échangeant avec des expert·es, et en collaborant avec 
                     des ONGs et organismes de recherche.
                   </p>
                 </div>
@@ -52,7 +52,7 @@ export default function DesignUtilisateur() {
                 <div className="card-content">
                   <p>
                     L&apos;accès à l&apos;hygiène est un droit humain fondamental qui ignore les frontières et les origines. 
-                    Nos publics-cibles sont principalement les êtres humains dépourvus d&apos;accès à l&apos;hygiène, en premier 
+                    Nos publics-cibles sont avant tout des êtres humains dépourvus d'accès digne à l'hygiène, en premier 
                     lieu les personnes sans-abris, mal-logées, migrantes ou réfugiées. Nous nous efforçons de rendre 
                     nos modules accueillant pour toutes et tous.
                   </p>
@@ -66,10 +66,10 @@ export default function DesignUtilisateur() {
                 </div>
                 <div className="card-content">
                   <p>
-                    Nous sommes à l&apos;écoute de nos bénéficiaires dans leur diversité afin de nous adapter à leurs 
+                  Au service de la dignité de nos bénéficiaires dans leur diversité afin de nous adapter à leurs 
                     besoins et d&apos;améliorer nos modules. Nous concevons BubbleBox en tant que &quot;commun solidaire&quot; 
                     où les personnes marginalisées peuvent bénéficier d&apos;un moment d&apos;intimité pour prendre soin 
-                    d&apos;elles-mêmes avant d&apos;interagir avec des bénévoles et de créer du lien avec une communauté locale.
+                    d&apos;elles-mêmes avant d&apos;interagir avec des bénévoles et de créer du lien avec la communauté locale..
                   </p>
                 </div>
               </div>
@@ -89,7 +89,7 @@ export default function DesignUtilisateur() {
               <div className="principle-item principle--empathy">
                 <div className="principle-icon">💙</div>
                 <h3>Empathie</h3>
-                <p>Comprendre et ressentir les besoins de chacun</p>
+                <p>Recueillir et comprendre les besoins de chacun</p>
               </div>
               <div className="principle-item principle--respect">
                 <div className="principle-icon">🤝</div>
@@ -106,37 +106,7 @@ export default function DesignUtilisateur() {
         </section>
 
         {/* Section finale avec design en escalier */}
-        <section className="design-final-steps">
-          <div className="container">
-            <div className="steps-container">
-              <div className="step step--1">
-                <h3>Mission d&apos;information</h3>
-                <p>
-                  Nous poursuivons une mission d&apos;information sur les inégalités d&apos;accès 
-                  à l&apos;hygiène et défendons publiquement le droit d&apos;accès à l&apos;hygiène pour toutes et tous.
-                </p>
-              </div>
-              <div className="step step--2">
-                <h3>Plaidoyer public</h3>
-                <p>
-                  Nous défendons activement le droit à l&apos;hygiène et sensibilisons 
-                  l&apos;opinion publique aux enjeux d&apos;accès à l&apos;hygiène.
-                </p>
-              </div>
-              <div className="step step--3">
-                <h3>Amélioration continue</h3>
-                <p>
-                  Nous collectons continuellement les retours et adaptons 
-                  nos solutions aux besoins réels des bénéficiaires.
-                </p>
-              </div>
-            </div>
-            <div className="final-actions">
-              <Link href="/#impact" className="btn btn--primary">DÉCOUVRIR NOTRE IMPACT</Link>
-              <Link href="/#contact" className="btn btn--ghost">NOUS CONTACTER</Link>
-            </div>
-          </div>
-        </section>
+   
 
         {/* CTA Section avec design unique */}
         <section className="design-cta-unique">
@@ -145,7 +115,7 @@ export default function DesignUtilisateur() {
               <h2>Ensemble, créons des solutions vraiment humaines</h2>
               <p>Votre soutien nous aide à maintenir nos bénéficiaires au cœur de notre démarche</p>
               <div className="cta-actions">
-                <Link href="/#don" className="btn btn--primary">FAIRE UN DON</Link>
+                <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=info@bubbleboxproject.org&su=Don" className="btn btn--primary" target="_blank" rel="noopener noreferrer">FAIRE UN DON</Link>
                 <Link href="/team" className="btn btn--ghost">REJOINDRE L&apos;ÉQUIPE</Link>
               </div>
             </div>

@@ -17,9 +17,9 @@ export default function NotreImpact() {
         <section className="impact-hero">
           <div className="container">
             <div className="impact-hero-content">
-              <h1>Notre Impact</h1>
+              <h1>Nos impacts</h1>
               <p className="hero-subtitle">
-                Des années de développement qui se concrétisent en impact réel sur le terrain.
+              Des années de développement qui se concrétisent en impact social positif sur le terrain.
               </p>
             </div>
           </div>
@@ -43,10 +43,21 @@ export default function NotreImpact() {
               <div className="timeline-item">
                 <div className="timeline-marker">🚀</div>
                 <div className="timeline-content">
-                  <h3>Inauguration à Bordeaux</h3>
+                  <h3>Notre premier déploiement à Bordeaux</h3>
                   <p>
                     Le premier module BubbleBox a été inauguré à Bordeaux en juillet 2021, 
                     en partenariat avec la Ville et la Croix-Rouge Française.
+                  </p>
+                </div>
+              </div>
+              <div className="timeline-item">
+                <div className="timeline-marker">📈</div>
+                <div className="timeline-content">
+                  <h3>Extension du dispositif</h3>
+                  <p>
+                    Grâce à l&apos;Appel à Manifestation d&apos;Intérêt Bordeaux Terres de Solidarités, 
+                    le dispositif bordelais va s&apos;étendre avec un module d&apos;accueil et un module 
+                    de soins supplémentaires.
                   </p>
                 </div>
               </div>
@@ -160,6 +171,10 @@ export default function NotreImpact() {
                   <div className="partner-icon">🏥</div>
                   <span className="partner-name">Croix-Rouge Française</span>
                 </div>
+                <div className="partner-item">
+                  <div className="partner-icon">🏛️</div>
+                  <span className="partner-name">CCAS de la Ville de Bordeaux</span>
+                </div>
               </div>
             </div>
           </div>
@@ -174,19 +189,7 @@ export default function NotreImpact() {
                 <div className="card-icon">📊</div>
                 <h3>Rapports d&apos;activités</h3>
                 <p>Consultez nos rapports détaillés et nos statistiques</p>
-                <Link href="/#contact" className="btn btn--primary">DEMANDER LES RAPPORTS</Link>
-              </div>
-              <div className="discovery-card">
-                <div className="card-icon">📈</div>
-                <h3>Évolution des projets</h3>
-                <p>Suivez le développement de nos initiatives</p>
-                <Link href="/solution" className="btn btn--primary">DÉCOUVRIR NOS PROJETS</Link>
-              </div>
-              <div className="discovery-card">
-                <div className="card-icon">🎯</div>
-                <h3>Objectifs futurs</h3>
-                <p>Découvrez nos ambitions et nos prochaines étapes</p>
-                <Link href="/#mission" className="btn btn--primary">VOIR NOS OBJECTIFS</Link>
+                <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=info@bubbleboxproject.org&su=Demande de rapports" className="btn btn--primary" target="_blank" rel="noopener noreferrer">DEMANDER LES RAPPORTS</Link>
               </div>
             </div>
           </div>
@@ -199,8 +202,8 @@ export default function NotreImpact() {
               <h2>Rejoignez notre impact</h2>
               <p>Ensemble, créons un avenir où l&apos;hygiène est accessible à tous</p>
               <div className="cta-actions">
-                <Link href="/#don" className="btn btn--primary">FAIRE UN DON</Link>
-                <Link href="/#contact" className="btn btn--ghost">NOUS CONTACTER</Link>
+                <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=info@bubbleboxproject.org&su=Don" className="btn btn--primary" target="_blank" rel="noopener noreferrer">FAIRE UN DON</Link>
+                <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=info@bubbleboxproject.org&su=Contact" className="btn btn--ghost" target="_blank" rel="noopener noreferrer">NOUS CONTACTER</Link>
               </div>
             </div>
           </div>

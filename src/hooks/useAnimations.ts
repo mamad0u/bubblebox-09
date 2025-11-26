@@ -51,22 +51,32 @@ export function useAnimations() {
 
     window.addEventListener('scroll', handleScroll);
 
-    // Smooth scroll pour les ancres
+    // Smooth scroll pour les ancres - seulement les ancres internes
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       const anchorElement = anchor as HTMLAnchorElement;
-      anchorElement.addEventListener('click', (e) => {
-        e.preventDefault();
-        const href = anchorElement.getAttribute('href');
-        if (href) {
-          const target = document.querySelector(href);
-          if (target) {
-            target.scrollIntoView({
-              behavior: 'smooth',
-              block: 'start'
-            });
+      const href = anchorElement.getAttribute('href');
+      // Ignorer les liens externes ou les URLs complètes
+      if (!href || href.includes('://') || href.includes('http') || href.includes('mailto:') || href.includes('www.')) {
+        return;
+      }
+      // Ne traiter que les ancres internes simples (format #section)
+      if (href && href.startsWith('#') && href.length > 1) {
+        anchorElement.addEventListener('click', (e) => {
+          try {
+            e.preventDefault();
+            const target = document.querySelector(href);
+            if (target) {
+              target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+              });
+            }
+          } catch (error) {
+            // Si le sélecteur n'est pas valide, laisser le comportement par défaut
+            console.warn('Sélecteur invalide:', href);
           }
-        }
-      });
+        });
+      }
     });
 
     // Animation des boutons au hover

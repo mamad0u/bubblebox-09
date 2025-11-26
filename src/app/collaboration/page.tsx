@@ -17,7 +17,7 @@ export default function Collaboration() {
         <section className="collaboration-hero">
           <div className="container">
             <div className="collaboration-hero-content">
-              <h1>Collaboration</h1>
+              <h1>Un commun humanitaire</h1>
               <p className="hero-subtitle">
                 Mettre l&apos;hygiène en commun pour créer des liens sociaux et renforcer la solidarité locale.
               </p>
@@ -31,12 +31,13 @@ export default function Collaboration() {
           <div className="container">
             <div className="network-layout">
               <div className="network-center">
+              <h2>Des modules pour rassembler :</h2>
               </div>
               <div className="network-nodes">
                 <div className="network-node node--associations">
                   <div className="node-icon">🏥</div>
                   <h3>Associations</h3>
-                  <p>Partenaire avec des ONG locales pour maximiser l&apos;impact</p>
+                  <p>Mis à disposition aux ONG locales pour maximiser l'impact</p>
                 </div>
                 <div className="network-node node--collectivites">
                   <div className="node-icon">🏛️</div>
@@ -62,24 +63,19 @@ export default function Collaboration() {
         <section className="collaboration-communs">
           <div className="container">
             <h2>Les communs humanitaires</h2>
-            <div className="communs-grid">
-              <div className="communs-item communs-item--main">
-                <h3>Qu&apos;est-ce qu&apos;un commun humanitaire ?</h3>
-                <p>
-                  Les modules BubbleBox sont des &quot;communs humanitaires&quot; développés, déployés et opérés 
-                  avec les associations, les collectivités et les communautés locales pour renforcer 
-                  le tissu de solidarité existant, s&apos;adapter à chaque contexte et maximiser notre impact.
+            <p>
+                Les modules BubbleBox sont pensés en tant que "communs humanitaires" développés, déployés et opérés avec les associations, les collectivités territoriales et les communautés locales pour renforcer le tissu de solidarité existant, s'adapter à chaque contexte et maximiser l'impact de chaque module.
                 </p>
-              </div>
+            <div className="communs-grid">
               <div className="communs-item">
                 <div className="communs-icon">🌱</div>
                 <h4>Développement partagé</h4>
-                <p>Conception collaborative avec tous les acteurs</p>
+                <p>Conception impliquant toutes les parties prenantes</p>
               </div>
               <div className="communs-item">
                 <div className="communs-icon">🚀</div>
                 <h4>Déploiement collectif</h4>
-                <p>Mise en place avec les communautés locales</p>
+                <p>Fédération des acteurs locaux autour du dispositif</p>
               </div>
               <div className="communs-item">
                 <div className="communs-icon">⚙️</div>
@@ -91,7 +87,7 @@ export default function Collaboration() {
         </section>
 
         {/* Section impact social avec design en spirale */}
-        <section className="collaboration-impact">
+        {/* <section className="collaboration-impact">
           <div className="container">
             <h2>Notre impact social</h2>
             <div className="impact-spiral">
@@ -118,54 +114,7 @@ export default function Collaboration() {
               </div>
             </div>
           </div>
-        </section>
-
-        {/* Section collaboration territoriale */}
-        <section className="collaboration-territoriale">
-          <div className="container">
-            <div className="territoriale-layout">
-              <div className="territoriale-content">
-                <h2>Collaboration territoriale</h2>
-                <p>
-                  En collaborant avec des associations et collectivités territoriales, nous soutenons 
-                  des relations saines et positives entre nos bénéficiaires et les communautés locales.
-                </p>
-                <div className="territoriale-benefits">
-                  <div className="benefit">
-                    <span className="benefit-icon">🤝</span>
-                    <span>Rapprochement des acteurs</span>
-                  </div>
-                  <div className="benefit">
-                    <span className="benefit-icon">💡</span>
-                    <span>Nouvelles collaborations</span>
-                  </div>
-                  <div className="benefit">
-                    <span className="benefit-icon">🏥</span>
-                    <span>Amélioration de la santé publique</span>
-                  </div>
-                </div>
-              </div>
-              <div className="territoriale-visual">
-                <div className="collaboration-flow">
-                  <div className="flow-step">
-                    <span className="step-number">1</span>
-                    <span>Rencontre</span>
-                  </div>
-                  <div className="flow-arrow">→</div>
-                  <div className="flow-step">
-                    <span className="step-number">2</span>
-                    <span>Collaboration</span>
-                  </div>
-                  <div className="flow-arrow">→</div>
-                  <div className="flow-step">
-                    <span className="step-number">3</span>
-                    <span>Impact</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        </section> */}
 
         {/* Section cercle vertueux */}
         <section className="collaboration-cercle">
@@ -205,7 +154,7 @@ export default function Collaboration() {
               <h2>Rejoignez notre réseau collaboratif</h2>
               <p>Ensemble, créons des communs humanitaires pour un avenir plus solidaire</p>
               <div className="cta-actions">
-                <Link href="/#contact" className="btn btn--primary">NOUS CONTACTER</Link>
+                <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=info@bubbleboxproject.org&su=Contact" className="btn btn--primary" target="_blank" rel="noopener noreferrer">NOUS CONTACTER</Link>
                 <Link href="/team" className="btn btn--ghost">REJOINDRE L&apos;ÉQUIPE</Link>
               </div>
             </div>

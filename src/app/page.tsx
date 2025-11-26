@@ -27,10 +27,10 @@ export default function Home() {
               <h1>EST UN DROIT</h1>
               <h1>UNIVERSEL</h1>
             </div>
-            <p className="hero-desc">Nous construisons des solutions pour améliorer l&apos;accès à l&apos;hygiène pour tous.</p>
+            <p className="hero-desc">Nous construisons des solutions pour améliorer l&apos;accès à l&apos;hygiène pour toutes et tous.</p>
             <div className="hero-ctas">
               <Link href="#solution" className="btn btn--primary">DÉCOUVRIR LA SOLUTION</Link>
-              <Link href="#don" className="btn btn--ghost">FAIRE UN DON</Link>
+              <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=info@bubbleboxproject.org&su=Don" className="btn btn--ghost" target="_blank" rel="noopener noreferrer">FAIRE UN DON</Link>
             </div>
           </div>
         </section>
@@ -40,9 +40,9 @@ export default function Home() {
             <div className="block-content">
               <h2>COMMENT</h2>
               <h2>SOUTENIR</h2>
-              <h2>BUBBLEBOX</h2>
-              <p>Soutenez nos actions sur le terrain en faisant un don. Chaque geste compte.</p>
-              <Link href="#don" className="btn btn--white">EN SAVOIR PLUS</Link>
+              <h2>BUBBLEBOX ?</h2>
+              <p>Soutenez nos actions sur le terrain en faisant un don. Financement, équipement ou produit d'hygiène : chaque geste compte.</p>
+              <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=info@bubbleboxproject.org&su=Don" className="btn btn--white" target="_blank" rel="noopener noreferrer">EN SAVOIR PLUS</Link>
             </div>
     
           </div>
@@ -51,15 +51,17 @@ export default function Home() {
             <div className="block-content">
               <h2>DEVENIR</h2>
               <h2>PARTENAIRE</h2>
-              <p>Entreprises, découvrez comment nous soutenir et agir ensemble.</p>
-              <Link href="#partenaires" className="btn btn--white">NOUS CONTACTER</Link>
+              <p>Entreprises,professionnels, découvrez comment nous soutenir et agir ensemble.</p>
+              <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=info@bubbleboxproject.org&su=Contact" className="btn btn--white" target="_blank" rel="noopener noreferrer">NOUS CONTACTER</Link>
             </div>
           </div>
           
-          <div className="block block--image">
-            <div className="image-placeholder">
-              <span>Image en attente</span>
-              <p>Accueil des bénéficiaires</p>
+          <div className="block block--accent">
+            <div className="block-content">
+              <h2>NOUS</h2>
+              <h2>REJOINDRE</h2>
+              <p>Vous avez envie de donner de votre temps pour améliorer l&apos;accès à l&apos;hygiène, contactez nous !</p>
+              <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=info@bubbleboxproject.org&su=Rejoindre l'équipe" className="btn btn--white" target="_blank" rel="noopener noreferrer">NOUS CONTACTER</Link>
             </div>
           </div>
         </section>
@@ -67,8 +69,6 @@ export default function Home() {
         <section id="mission" className="mission-section">
           <div className="container">
             <div className="mission-content">
-              <h2>NOUS SOMMES</h2>
-              <h2>ICI ET LÀ-BAS</h2>
               <p>Nous construisons des modules de douches mobiles et autonomes afin de donner un accès gratuit et décent à l&apos;hygiène pour les personnes sans-abris, mal-logées, migrantes ou réfugiées.</p>
             </div>
             
@@ -146,7 +146,6 @@ export default function Home() {
               </div>
               
               <blockquote className="impact-quote">
-                <p>&quot;Le manque d&apos;accès à l&apos;hygiène menace la santé et le bien-être d&apos;un nombre croissant de personnes, contribue à leur marginalisation et pose un risque pour la santé publique.&quot;</p>
                 <p>&quot;BubbleBox propose une solution aux collectivités, ONG et communautés locales pour garantir ensemble un accès à l&apos;hygiène décent et gratuit pour tous.&quot;</p>
               </blockquote>
             </div>
@@ -155,7 +154,6 @@ export default function Home() {
 
         <section id="benefits" className="benefits-section">
           <div className="container">
-            <h2>CE QU&apos;APPORTENT BUBBLEBOX</h2>
             <div className="benefits-grid">
               <div className="benefit-card">
                 <div className="benefit-icon">🤝</div>
@@ -179,8 +177,8 @@ export default function Home() {
         <section id="durabilite" className="durabilite-section">
           <div className="container">
             <div className="durabilite-content">
-              <h2>DURABILITÉ</h2>
-              <h2>INTÉGRÉE</h2>
+              <h2>LA PLANÈTE AUSSI </h2>
+              <h2>A LE DROIT D'ÊTRE PROPRE"</h2>
               <p>Matériaux réemployés, filtration d&apos;eau, solaire et stockage. Nous minimisons nos empreintes et maximisons l&apos;impact social.</p>
               <div className="durabilite-features">
                 <div className="durabilite-feature">
@@ -232,8 +230,8 @@ export default function Home() {
               <h2>AGISSEZ MAINTENANT</h2>
               <p>Votre don finance des douches, des kits d&apos;hygiène et l&apos;autonomie énergétique des modules.</p>
               <div className="cta-actions">
-                <Link href="#contact" className="btn btn--primary">JE FAIS UN DON</Link>
-                <Link href="#contact" className="btn btn--ghost">DEVENIR PARTENAIRE</Link>
+                <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=info@bubbleboxproject.org&su=Don" className="btn btn--primary" target="_blank" rel="noopener noreferrer">JE FAIS UN DON</Link>
+                <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=info@bubbleboxproject.org&su=Partenariat" className="btn btn--ghost" target="_blank" rel="noopener noreferrer">DEVENIR PARTENAIRE</Link>
               </div>
             </div>
         </div>

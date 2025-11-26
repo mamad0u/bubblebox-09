@@ -54,12 +54,11 @@ export default function Durabilite() {
               <div className="content-block content-block--small">
                 <div className="eco-stats">
                   <div className="eco-stat">
-                    <span className="stat-number">80%</span>
-                    <span className="stat-label">Matériaux recyclés</span>
+                    <span className="stat-label">Des conteneurs "derniers voyages" upcyclés</span>
                   </div>
                   <div className="eco-stat">
-                    <span className="stat-number">100%</span>
-                    <span className="stat-label">Entreprises d&apos;insertion</span>
+                    <span className="stat-label">Des structures d'insertion comme partenaire d'entretien et de construction
+                    </span>
                   </div>
                 </div>
               </div>
@@ -70,32 +69,31 @@ export default function Durabilite() {
         {/* Section innovation avec grille hexagonale */}
         <section className="durabilite-innovation-hex">
           <div className="container">
-            <h2>Innovation technologique au service de l&apos;autonomie</h2>
+            <h2>L'innovation au service de l'autonomie</h2>
             <p className="section-intro">
-              Nous collaborons avec des startups spécialisées dans l&apos;élaboration de systèmes de filtration. 
-              En réutilisant une partie de l&apos;eau, nous pouvons réduire la consommation de nos modules et 
-              permettre leur opération sur des sites sans accès aux réseaux de distribution hydro-électrique.
+            Nous collaborons avec la Fondation Véolia et des startups spécialisées afin d'élaborer notre système de filtration.
+            En réutilisant une partie de l'eau, nous pouvons réduire la consommation de nos modules. A terme, nous voulons équiper nos modules avec des panneaux solaires et un stockage d'énergie pour les opérer même sur des sites sans accès aux réseaux d'eau et d'électricité.
             </p>
             <div className="hex-grid">
-              <div className="hex-item hex-item--large">
+              <div className="hex-item hex-item--full-width">
+                <div className="hex-icon">🌱</div>
+                <h3>Éco-conception</h3>
+                <p>Design respectueux de l&apos;environnement</p>
+              </div>
+              <div className="hex-item">
                 <div className="hex-icon">💧</div>
                 <h3>Système de filtration</h3>
-                <p>Réutilisation de l&apos;eau pour réduire la consommation et optimiser les ressources</p>
+                <p>Réutilisation de l&apos;eau pour réduire la consommation et optimiser nos ressources</p>
               </div>
               <div className="hex-item">
                 <div className="hex-icon">☀️</div>
                 <h3>Panneaux solaires</h3>
-                <p>Énergie renouvelable pour l&apos;autonomie</p>
+                <p>Diminution de notre consommation d'énergie</p>
               </div>
               <div className="hex-item">
                 <div className="hex-icon">🔋</div>
                 <h3>Stockage d&apos;énergie</h3>
-                <p>Jusqu&apos;à 3 jours d&apos;autonomie complète</p>
-              </div>
-              <div className="hex-item">
-                <div className="hex-icon">🌱</div>
-                <h3>Éco-conception</h3>
-                <p>Design respectueux de l&apos;environnement</p>
+                <p>Pour avoir de l'eau chaude, même les mauvais jours</p>
               </div>
             </div>
           </div>
@@ -104,30 +102,9 @@ export default function Durabilite() {
         {/* Section autonomie avec design en escalier */}
         <section className="durabilite-autonomie-steps">
           <div className="container">
-            <h2>Notre ambition : l&apos;autonomie totale</h2>
-            <div className="autonomie-progression">
-              <div className="progression-step">
-                <div className="step-number">1</div>
-                <div className="step-content">
-                  <h3>Filtration de l&apos;eau</h3>
-                  <p>Réutilisation et purification pour réduire la consommation</p>
-                </div>
-              </div>
-              <div className="progression-step">
-                <div className="step-number">2</div>
-                <div className="step-content">
-                  <h3>Énergie solaire</h3>
-                  <p>Panneaux photovoltaïques pour l&apos;autonomie énergétique</p>
-                </div>
-              </div>
-              <div className="progression-step">
-                <div className="step-number">3</div>
-                <div className="step-content">
-                  <h3>Stockage intelligent</h3>
-                  <p>Batteries et réservoirs pour 3 jours d&apos;autonomie</p>
-                </div>
-              </div>
-            </div>
+            <h2>Notre ambition : fonctionner en autonomie pendant 3 jours!</h2>
+          <p>L'autonomie partielle permet à la fois de diminuer les empreintes environnementales du module tout en permettant son opération dans de nouveaux contextes, par exemple dans des milieux reculés ou en cas de catastrophe naturelle. Lorsque les réserves sont vides, le module pourrait être rechargé dans une base arrière ou bien sur place (par exemple par watertrucking).
+          </p>
           </div>
         </section>
 
@@ -137,7 +114,7 @@ export default function Durabilite() {
             <h2>Produits d&apos;hygiène durables et responsables</h2>
             <div className="cascade-layout">
               <div className="cascade-item cascade-item--main">
-                <h3>Distribution responsable</h3>
+                <h3>Penser la durabilité à chaque étape</h3>
                 <p>
                   BubbleBox s&apos;engage à distribuer des produits d&apos;hygiène invendus ou non-utilisés à ses 
                   bénéficiaires, tout en minimisant ses empreintes environnementales de la fabrication 
@@ -172,7 +149,7 @@ export default function Durabilite() {
               <h2>Soutenez notre vision durable</h2>
               <p>Ensemble, créons un standard de durabilité pour l&apos;hygiène mobile</p>
               <div className="cta-actions">
-                <Link href="/#don" className="btn btn--primary">FAIRE UN DON</Link>
+                <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=info@bubbleboxproject.org&su=Don" className="btn btn--primary" target="_blank" rel="noopener noreferrer">FAIRE UN DON</Link>
                 <Link href="/solution" className="btn btn--ghost">DÉCOUVRIR NOTRE SOLUTION</Link>
               </div>
             </div>

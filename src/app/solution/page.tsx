@@ -34,22 +34,22 @@ export default function Solution() {
               <div className="mosaic-item mosaic-item--large">
                 <div className="mosaic-icon">🚿</div>
                 <h3>Jusqu&apos;à 100 douches par jour</h3>
-                <p>Capacité d&apos;accueil élevée pour répondre aux besoins des populations</p>
+                <p>Capacité d&apos;accueil théorique pour répondre aux besoins des populations</p>
               </div>
               <div className="mosaic-item mosaic-item--small">
                 <div className="mosaic-icon">📦</div>
-                <h3>Conteneur mobile 20 pieds</h3>
+                <h3>Conteneur maritime 20 pieds</h3>
                 <p>Transport facile et déploiement rapide</p>
               </div>
               <div className="mosaic-item mosaic-item--small">
                 <div className="mosaic-icon">🤝</div>
                 <h3>Opéré en commun</h3>
-                <p>Collaboration avec associations locales</p>
-              </div>
+                <p>Avec les associations et acteurs de la solidarité locaux</p>
+              </div> 
               <div className="mosaic-item mosaic-item--small">
                 <div className="mosaic-icon">⏰</div>
-                <h3>50h d&apos;autonomie</h3>
-                <p>Fonctionnement indépendant</p>
+                <h3>Jusqu&apos;à 50h d&apos;autonomie</h3>
+                <p>Objectif de fonctionnement sans être relié au réseau</p>
               </div>
               <div className="mosaic-item mosaic-item--small">
                 <div className="mosaic-icon">💧</div>
@@ -63,7 +63,7 @@ export default function Solution() {
         {/* Section avec timeline verticale */}
         <section className="solution-timeline">
           <div className="container">
-            <h2>Notre approche en 4 étapes</h2>
+            <h2>Notre approche en 3 points</h2>
             <div className="timeline">
               <div className="timeline-item">
                 <div className="timeline-marker">1</div>
@@ -96,25 +96,13 @@ export default function Solution() {
                 <div className="timeline-content">
                   <h3>S&apos;adapter aux besoins</h3>
                   <p>
-                    Plutôt que d&apos;attendre que nos publics-cibles viennent à nous, nos modules permettent d&apos;aller 
-                    vers les populations privées d&apos;accès décent à l&apos;hygiène. BubbleBox est conçu pour s&apos;adapter 
-                    à différents contextes et situations d&apos;urgence.
+                  S'adapter aux besoins de nos bénéficiaires
+Plutôt que d'attendre qu'elles viennent à nous, nos modules permettent d'aller vers les populations privées d'accès décent à l'hygiène. BubbleBox est conçu pour s'adapter à différents contextes et situations d'urgence. Nous associons nos partenaires et bénéficiaires à la gouvernance du projet et à son évolution.
                   </p>
                   <Link href="/#impact" className="btn btn--primary">En savoir plus</Link>
                 </div>
               </div>
 
-              <div className="timeline-item">
-                <div className="timeline-marker">4</div>
-                <div className="timeline-content">
-                  <h3>Ramener nos bénéficiaires au centre</h3>
-                  <p>
-                    BubbleBox a pour but d&apos;associer ses partenaires locaux et bénéficiaires à la gouvernance 
-                    du projet. Nous suivons une démarche d&apos;amélioration continue en collectant les retours.
-                  </p>
-                  <Link href="/design-utilisateur" className="btn btn--primary">En savoir plus</Link>
-                </div>
-              </div>
             </div>
           </div>
         </section>
@@ -129,8 +117,8 @@ export default function Solution() {
               </div>
          
               <div className="cta-actions">
-                <Link href="/#don" className="btn btn--primary">FAIRE UN DON</Link>
-                <Link href="/#contact" className="btn btn--ghost">NOUS CONTACTER</Link>
+                <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=info@bubbleboxproject.org&su=Don" className="btn btn--primary" target="_blank" rel="noopener noreferrer">FAIRE UN DON</Link>
+                <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=info@bubbleboxproject.org&su=Contact" className="btn btn--ghost" target="_blank" rel="noopener noreferrer">NOUS CONTACTER</Link>
               </div>
             </div>
           </div>

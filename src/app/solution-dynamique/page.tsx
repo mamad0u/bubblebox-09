@@ -223,7 +223,7 @@ export default function SolutionDynamique() {
               <h2>Prêt à déployer notre solution dynamique ?</h2>
               <p>BubbleBox s&apos;adapte à vos besoins et contextes spécifiques</p>
               <div className="cta-actions">
-                <Link href="/#contact" className="btn btn--primary">NOUS CONTACTER</Link>
+                <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=info@bubbleboxproject.org&su=Contact" className="btn btn--primary" target="_blank" rel="noopener noreferrer">NOUS CONTACTER</Link>
                 <Link href="/solution" className="btn btn--ghost">DÉCOUVRIR LA SOLUTION</Link>
               </div>
             </div>

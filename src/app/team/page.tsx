@@ -28,7 +28,6 @@ export default function Team() {
         {/* Équipe Principale Section */}
         <section className="team-main-section">
           <div className="container">
-            <h2>L&apos;Équipe Fondatrice</h2>
             <div className="team-grid">
               <div className="team-member">
                 <div className="member-avatar">
@@ -156,7 +155,7 @@ export default function Team() {
               </div>
 
               <div className="contact-cta">
-                <Link href="/#contact" className="btn btn--primary">NOUS CONTACTER</Link>
+                <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=info@bubbleboxproject.org&su=Contact" className="btn btn--primary" target="_blank" rel="noopener noreferrer">NOUS CONTACTER</Link>
               </div>
             </div>
           </div>
@@ -190,32 +189,13 @@ export default function Team() {
             </div>
 
             <div className="help-contact">
-              <Link href="/#contact" className="btn btn--secondary">NOUS CONTACTER</Link>
+              <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=info@bubbleboxproject.org&su=Contact" className="btn btn--secondary" target="_blank" rel="noopener noreferrer">NOUS CONTACTER</Link>
             </div>
           </div>
         </section>
 
         {/* Contact Direct Section */}
-        <section className="contact-direct-section">
-          <div className="container">
-            <div className="contact-content">
-              <h2>Contactez-nous</h2>
-              <div className="contact-info">
-                <p className="contact-email">
-                  <strong>Email :</strong> 
-                  <a href="mailto:info@bubbleboxproject.org">info@bubbleboxproject.org</a>
-                </p>
-                <p className="contact-note">
-                  N&apos;hésitez pas à nous écrire pour discuter de vos idées et de la façon dont vous pouvez contribuer à notre mission.
-                </p>
-              </div>
-              <div className="contact-actions">
-                <Link href="/#contact" className="btn btn--primary">FORMULAIRE DE CONTACT</Link>
-                <Link href="/#don" className="btn btn--ghost">FAIRE UN DON</Link>
-              </div>
-            </div>
-          </div>
-        </section>
+
       </main>
 
       <Footer />
