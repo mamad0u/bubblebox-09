@@ -96,8 +96,8 @@ export default function Solution() {
                 <div className="timeline-content">
                   <h3>S&apos;adapter aux besoins</h3>
                   <p>
-                  S'adapter aux besoins de nos bénéficiaires
-Plutôt que d'attendre qu'elles viennent à nous, nos modules permettent d'aller vers les populations privées d'accès décent à l'hygiène. BubbleBox est conçu pour s'adapter à différents contextes et situations d'urgence. Nous associons nos partenaires et bénéficiaires à la gouvernance du projet et à son évolution.
+                  S&apos;adapter aux besoins de nos bénéficiaires
+Plutôt que d&apos;attendre qu&apos;elles viennent à nous, nos modules permettent d&apos;aller vers les populations privées d&apos;accès décent à l&apos;hygiène. BubbleBox est conçu pour s&apos;adapter à différents contextes et situations d&apos;urgence. Nous associons nos partenaires et bénéficiaires à la gouvernance du projet et à son évolution.
                   </p>
                   <Link href="/#impact" className="btn btn--primary">En savoir plus</Link>
                 </div>

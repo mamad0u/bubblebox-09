@@ -52,7 +52,7 @@ export default function DesignUtilisateur() {
                 <div className="card-content">
                   <p>
                     L&apos;accès à l&apos;hygiène est un droit humain fondamental qui ignore les frontières et les origines. 
-                    Nos publics-cibles sont avant tout des êtres humains dépourvus d'accès digne à l'hygiène, en premier 
+                    Nos publics-cibles sont avant tout des êtres humains dépourvus d&apos;accès digne à l&apos;hygiène, en premier 
                     lieu les personnes sans-abris, mal-logées, migrantes ou réfugiées. Nous nous efforçons de rendre 
                     nos modules accueillant pour toutes et tous.
                   </p>

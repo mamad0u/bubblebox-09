@@ -37,7 +37,7 @@ export default function Collaboration() {
                 <div className="network-node node--associations">
                   <div className="node-icon">🏥</div>
                   <h3>Associations</h3>
-                  <p>Mis à disposition aux ONG locales pour maximiser l'impact</p>
+                  <p>Mis à disposition aux ONG locales pour maximiser l&apos;impact</p>
                 </div>
                 <div className="network-node node--collectivites">
                   <div className="node-icon">🏛️</div>
@@ -64,7 +64,7 @@ export default function Collaboration() {
           <div className="container">
             <h2>Les communs humanitaires</h2>
             <p>
-                Les modules BubbleBox sont pensés en tant que "communs humanitaires" développés, déployés et opérés avec les associations, les collectivités territoriales et les communautés locales pour renforcer le tissu de solidarité existant, s'adapter à chaque contexte et maximiser l'impact de chaque module.
+                Les modules BubbleBox sont pensés en tant que &quot;communs humanitaires&quot; développés, déployés et opérés avec les associations, les collectivités territoriales et les communautés locales pour renforcer le tissu de solidarité existant, s&apos;adapter à chaque contexte et maximiser l&apos;impact de chaque module.
                 </p>
             <div className="communs-grid">
               <div className="communs-item">

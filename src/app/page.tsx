@@ -41,7 +41,7 @@ export default function Home() {
               <h2>COMMENT</h2>
               <h2>SOUTENIR</h2>
               <h2>BUBBLEBOX ?</h2>
-              <p>Soutenez nos actions sur le terrain en faisant un don. Financement, équipement ou produit d'hygiène : chaque geste compte.</p>
+              <p>Soutenez nos actions sur le terrain en faisant un don. Financement, équipement ou produit d&apos;hygiène : chaque geste compte.</p>
               <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=info@bubbleboxproject.org&su=Don" className="btn btn--white" target="_blank" rel="noopener noreferrer">EN SAVOIR PLUS</Link>
             </div>
     
@@ -178,7 +178,7 @@ export default function Home() {
           <div className="container">
             <div className="durabilite-content">
               <h2>LA PLANÈTE AUSSI </h2>
-              <h2>A LE DROIT D'ÊTRE PROPRE"</h2>
+              <h2>A LE DROIT D&apos;ÊTRE PROPRE&quot;</h2>
               <p>Matériaux réemployés, filtration d&apos;eau, solaire et stockage. Nous minimisons nos empreintes et maximisons l&apos;impact social.</p>
               <div className="durabilite-features">
                 <div className="durabilite-feature">

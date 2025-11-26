@@ -61,21 +61,21 @@ export function useAnimations() {
       }
       // Ne traiter que les ancres internes simples (format #section)
       if (href && href.startsWith('#') && href.length > 1) {
-        anchorElement.addEventListener('click', (e) => {
+      anchorElement.addEventListener('click', (e) => {
           try {
-            e.preventDefault();
-            const target = document.querySelector(href);
-            if (target) {
-              target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-              });
-            }
+        e.preventDefault();
+          const target = document.querySelector(href);
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
           } catch (error) {
             // Si le sélecteur n'est pas valide, laisser le comportement par défaut
             console.warn('Sélecteur invalide:', href);
-          }
-        });
+        }
+      });
       }
     });
 

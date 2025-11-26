@@ -54,10 +54,10 @@ export default function Durabilite() {
               <div className="content-block content-block--small">
                 <div className="eco-stats">
                   <div className="eco-stat">
-                    <span className="stat-label">Des conteneurs "derniers voyages" upcyclés</span>
+                    <span className="stat-label">Des conteneurs &quot;derniers voyages&quot; upcyclés</span>
                   </div>
                   <div className="eco-stat">
-                    <span className="stat-label">Des structures d'insertion comme partenaire d'entretien et de construction
+                    <span className="stat-label">Des structures d&apos;insertion comme partenaire d&apos;entretien et de construction
                     </span>
                   </div>
                 </div>
@@ -69,10 +69,10 @@ export default function Durabilite() {
         {/* Section innovation avec grille hexagonale */}
         <section className="durabilite-innovation-hex">
           <div className="container">
-            <h2>L'innovation au service de l'autonomie</h2>
+            <h2>L&apos;innovation au service de l&apos;autonomie</h2>
             <p className="section-intro">
-            Nous collaborons avec la Fondation Véolia et des startups spécialisées afin d'élaborer notre système de filtration.
-            En réutilisant une partie de l'eau, nous pouvons réduire la consommation de nos modules. A terme, nous voulons équiper nos modules avec des panneaux solaires et un stockage d'énergie pour les opérer même sur des sites sans accès aux réseaux d'eau et d'électricité.
+            Nous collaborons avec la Fondation Véolia et des startups spécialisées afin d&apos;élaborer notre système de filtration.
+            En réutilisant une partie de l&apos;eau, nous pouvons réduire la consommation de nos modules. A terme, nous voulons équiper nos modules avec des panneaux solaires et un stockage d&apos;énergie pour les opérer même sur des sites sans accès aux réseaux d&apos;eau et d&apos;électricité.
             </p>
             <div className="hex-grid">
               <div className="hex-item hex-item--full-width">
@@ -88,12 +88,12 @@ export default function Durabilite() {
               <div className="hex-item">
                 <div className="hex-icon">☀️</div>
                 <h3>Panneaux solaires</h3>
-                <p>Diminution de notre consommation d'énergie</p>
+                <p>Diminution de notre consommation d&apos;énergie</p>
               </div>
               <div className="hex-item">
                 <div className="hex-icon">🔋</div>
                 <h3>Stockage d&apos;énergie</h3>
-                <p>Pour avoir de l'eau chaude, même les mauvais jours</p>
+                <p>Pour avoir de l&apos;eau chaude, même les mauvais jours</p>
               </div>
             </div>
           </div>
@@ -103,7 +103,7 @@ export default function Durabilite() {
         <section className="durabilite-autonomie-steps">
           <div className="container">
             <h2>Notre ambition : fonctionner en autonomie pendant 3 jours!</h2>
-          <p>L'autonomie partielle permet à la fois de diminuer les empreintes environnementales du module tout en permettant son opération dans de nouveaux contextes, par exemple dans des milieux reculés ou en cas de catastrophe naturelle. Lorsque les réserves sont vides, le module pourrait être rechargé dans une base arrière ou bien sur place (par exemple par watertrucking).
+          <p>L&apos;autonomie partielle permet à la fois de diminuer les empreintes environnementales du module tout en permettant son opération dans de nouveaux contextes, par exemple dans des milieux reculés ou en cas de catastrophe naturelle. Lorsque les réserves sont vides, le module pourrait être rechargé dans une base arrière ou bien sur place (par exemple par watertrucking).
           </p>
           </div>
         </section>
