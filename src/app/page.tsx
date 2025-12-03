@@ -18,7 +18,7 @@ export default function Home() {
           <div className="hero-bg" role="img" aria-label="Module de douches mobile">
             <Image
               src="/hero-img.jpg"
-              alt="Module de douches mobile BubbleBox"
+              alt="Module de douches mobiles autonomes BubbleBox - Accès gratuit à l'hygiène pour personnes sans-abris et mal-logées"
               fill
               priority
               style={{ objectFit: 'cover' }}
@@ -126,7 +126,7 @@ export default function Home() {
           <div className="solution-block solution-block--image">
             <Image
               src="/image-home.jpg"
-              alt="Module BubbleBox"
+              alt="Module de douches mobiles BubbleBox - Conteneur maritime recyclé avec 3 cabines individuelles pour l'accès à l'hygiène"
               fill
               style={{ objectFit: 'cover' }}
             />
