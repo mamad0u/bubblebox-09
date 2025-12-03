@@ -10,7 +10,7 @@ export default function Footer() {
         <div>
           <Link className="brand brand--footer" href="/">
             <Image 
-              src="/BBX.png" 
+              src="/logo-white.png" 
               alt="BubbleBox Logo" 
               width={160} 
               height={50}
