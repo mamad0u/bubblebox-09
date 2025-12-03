@@ -92,18 +92,18 @@ export function useAnimations() {
       });
     });
 
-    // Effet de parallaxe léger sur le hero
-    const handleParallax = () => {
-      const scrolled = window.pageYOffset;
-      const hero = document.querySelector('.hero-bg img') as HTMLImageElement | null;
-      
-      if (hero) {
-        const rate = scrolled * -0.3;
-        hero.style.transform = `translateY(${rate}px) scale(1.04)`;
-      }
-    };
+    // Effet de parallaxe léger sur le hero - DÉSACTIVÉ
+    // const handleParallax = () => {
+    //   const scrolled = window.pageYOffset;
+    //   const hero = document.querySelector('.hero-bg img') as HTMLImageElement | null;
+    //   
+    //   if (hero) {
+    //     const rate = scrolled * -0.3;
+    //     hero.style.transform = `translateY(${rate}px) scale(1.04)`;
+    //   }
+    // };
 
-    window.addEventListener('scroll', handleParallax);
+    // window.addEventListener('scroll', handleParallax);
 
     // Animation des cartes d'impact au hover
     document.querySelectorAll('.impact-card').forEach(card => {
@@ -214,7 +214,7 @@ export function useAnimations() {
     // Cleanup function
     return () => {
       window.removeEventListener('scroll', handleScroll);
-      window.removeEventListener('scroll', handleParallax);
+      // window.removeEventListener('scroll', handleParallax);
       window.removeEventListener('scroll', handleLogoAnimation);
       observer.disconnect();
     };

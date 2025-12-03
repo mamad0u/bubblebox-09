@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { useAnimations } from '../hooks/useAnimations';
@@ -15,10 +16,13 @@ export default function Home() {
       <main>
         <section className="hero">
           <div className="hero-bg" role="img" aria-label="Module de douches mobile">
-            <div className="image-placeholder">
-              <span>Image en attente</span>
-              <p>Module de douches mobile</p>
-            </div>
+            <Image
+              src="/hero-img.jpg"
+              alt="Module de douches mobile BubbleBox"
+              fill
+              priority
+              style={{ objectFit: 'cover' }}
+            />
           </div>
           <div className="hero-overlay"></div>
           <div className="hero-content container">
@@ -120,10 +124,12 @@ export default function Home() {
           </div>
           
           <div className="solution-block solution-block--image">
-            <div className="image-placeholder">
-              <span>Image en attente</span>
-              <p>Module BubbleBox</p>
-            </div>
+            <Image
+              src="/image-home.jpg"
+              alt="Module BubbleBox"
+              fill
+              style={{ objectFit: 'cover' }}
+            />
           </div>
         </section>
 
