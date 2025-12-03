@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import { useAnimations } from '../../hooks/useAnimations';
@@ -37,7 +38,14 @@ export default function Solution() {
                 <p>Capacité d&apos;accueil théorique pour répondre aux besoins des populations</p>
               </div>
               <div className="mosaic-item mosaic-item--small">
-                <div className="mosaic-icon">📦</div>
+                <div className="mosaic-icon">
+                  <Image
+                    src="/contenaire.png"
+                    alt="Conteneur maritime recyclé BubbleBox"
+                    width={48}
+                    height={48}
+                  />
+                </div>
                 <h3>Conteneur maritime 20 pieds</h3>
                 <p>Transport facile et déploiement rapide</p>
               </div>

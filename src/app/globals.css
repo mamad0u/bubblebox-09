@@ -346,7 +346,8 @@ body{
 .mosaic-item--small:nth-child(3){grid-column:2;grid-row:2}
 .mosaic-item--small:nth-child(4){grid-column:3;grid-row:1}
 .mosaic-item--small:nth-child(5){grid-column:3;grid-row:2}
-.mosaic-icon{font-size:3rem;display:block;margin-bottom:1rem}
+.mosaic-icon{font-size:3rem;display:flex;align-items:center;justify-content:center;margin-bottom:1rem}
+.mosaic-icon img{width:48px;height:48px;object-fit:contain}
 .mosaic-item h3{font-size:1.2rem;font-weight:800;color:var(--text);margin:0 0 1rem}
 .mosaic-item p{color:var(--muted);line-height:1.6;margin:0;font-size:.95rem}
 
